@@ -32,7 +32,7 @@ app.use( function(err, req, res, next) {
 })
 
 // Start server running 
-let server = app.listen(process.env.PORT || 3000, function() {
+let server = app.listen(process.env.PORT || 1707, function() {
     console.log('Express server running on port', server.address().port)
 })
 
