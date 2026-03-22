@@ -1,0 +1,18 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: wheat;
+}
+
+h1 {
+    color: palevioletred;
+}
+
+
+h2 {
+    text-align: center;
+    color: salmon;
+}
+
+h3 {
+    color: crimson;
+}

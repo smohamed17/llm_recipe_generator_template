@@ -1,3 +1,35 @@
 <h1>Recipe Results</h1>
 
-{{!-- TODO create HTML and display the recipe information --}}
+<p> You have entered "{{ userIngredients }}"</p>
+
+<p> Here's a recipe using those ingredients</p>
+
+<h2>{{ recipeJSON.recipeName }}</h2>
+
+<h3>Description</h3>
+
+<p>{{ recipeJSON.description }}</p>
+
+<h3>Nutritional Facts</h3>
+
+<p>{{ recipeJSON.nutritionalFacts }}</p>
+
+<h3>Allergens</h3>
+
+<p>{{ recipeJSON.allergens }}</p>
+
+<h3>Ingredients</h3>
+<ul>
+    {{#each recipeJSON.ingredients }}
+        <li>{{ this }}</li>  <!-- This has a specific meaning of having each ingredient display on the website using the JSON. -->
+    {{/each}}
+
+</ul>
+
+<h3>Instructions</h3>
+<ul>
+    {{#each recipeJSON.instructions }}
+        <li>{{ this }}</li>  <!-- This has a specific meaning of having each instruction details on the website using the JSON. -->
+    {{/each}}
+
+</ul>
